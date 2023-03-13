@@ -1,20 +1,12 @@
 import React from 'react'
+import { TodoItem } from './TodoItem'
 
-export const Todos = () => {
+export const Todos = ({todos}) => {
   return (
-    <div className='main-div'>
-      <div className='child-div'>
-        <figure>
-          <figcaption >
-            Add Todo✒️
-          </figcaption>
-        </figure>
-        <div className='addItem'> 
-           <input type="text" placeholder="Add Item"/>
-        </div>
-      </div>
-
-      <h3>Todos List</h3>
+    <div className='container'>
+          <h3>Todos List</h3>
+           <p>todo= {todos.item[8]}</p>
       </div>
   )
 }
+  
